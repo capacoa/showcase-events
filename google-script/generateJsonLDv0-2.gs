@@ -1,5 +1,5 @@
 /**
- * Showcase Event JSON-LD Generator
+ * Showcase Event JSON-LD Generator Version 0.2
  *
  * HOW TO USE:
  * 1. In Google Sheets, go to Extensions > Apps Script
