@@ -11,9 +11,13 @@ https://drive.google.com/drive/folders/1T-dEAFyfqQM0xY6IspV9ILkPE8aDGIqL?usp=dri
 
 How to use:
 
-  1. Make a copy of the spreadsheet. You will be warned that the spreadsheet contains a script that will be copied along with the spreadsheet. You may safely accept the script.
+  1. Make a copy of the spreadsheet. You will be warned that the spreadsheet contains an "Attached Apps Script file", that is a Google script that will be copied along with the spreadsheet. You may safely copy the script.
   2. Populate all white cells in the "Form" tab.
-  3. In the  
+  3. When you are done click on "JSON-LD Tools" and the "Generate JSON-LD".
+  <img width="968" height="162" alt="image" src="https://github.com/user-attachments/assets/aa944872-01d8-44dc-b693-d6fb5a55f487" />
+  4. This will prompt another warning regarding the Google script. You may accept this script.
+  5. A dialog box will appear on the right side of the screen. This is you JSON-LD code, which you may copy and paste on your website.  
 
-This tool
-If this tool is adopted by regional presenting
+### Purpose
+
+If this tool is adopted by regional presenting networks, CAPACOA will create an API endpoint to expose the data. This data will then be loaded to Artsdata.
