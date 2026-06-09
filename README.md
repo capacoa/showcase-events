@@ -18,7 +18,7 @@ How to use:
   <img width="968" height="162" alt="image" src="https://github.com/user-attachments/assets/aa944872-01d8-44dc-b693-d6fb5a55f487" />
   
   4. This will prompt another warning regarding the Google script. You may accept this script.
-  5. A dialog box will appear on the right side of the screen. This is you JSON-LD code, which you may copy and paste on your website.  
+  5. A dialog box will appear on the right side of the screen. This is your JSON-LD code, which you may copy and paste on your website.  
 
 ### Purpose
 
