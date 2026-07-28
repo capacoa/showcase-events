@@ -19,7 +19,7 @@ How to use:
   
   4. This will prompt another warning regarding the Google script. You may accept this script.
   5. A dialog box will appear on the right side of the screen. This is your JSON-LD code, which you may copy and paste on your website.
-  6. To send your structured data to CAPACOA and to Artsdata, click on "JSON-LD Tools" and then on "Push to GitHub".
+  6. To send your structured data to CAPACOA and to Artsdata, click on "JSON-LD Tools" and then on "Push to GitHub". Do this only when your data is complete and ready to be published.
 
 ### Purpose
 
