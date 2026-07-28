@@ -13,16 +13,20 @@ How to use:
 
   1. Make a copy of the spreadsheet. You will be warned that the spreadsheet contains an "Attached Apps Script file", that is a Google script that will be copied along with the spreadsheet. You may safely copy the script.
   2. Populate all white cells in the "Form" tab.
-  3. When you are done click on "JSON-LD Tools" and the "Generate JSON-LD".
+  3. When you are done click on "JSON-LD Tools" and then on "Generate JSON-LD".
 
   <img width="968" height="162" alt="image" src="https://github.com/user-attachments/assets/aa944872-01d8-44dc-b693-d6fb5a55f487" />
   
   4. This will prompt another warning regarding the Google script. You may accept this script.
-  5. A dialog box will appear on the right side of the screen. This is your JSON-LD code, which you may copy and paste on your website.  
+  5. A dialog box will appear on the right side of the screen. This is your JSON-LD code, which you may copy and paste on your website.
+  6. To send your structured data to CAPACOA and to Artsdata, click on "JSON-LD Tools" and then on "Push to GitHub".
 
 ### Purpose
 
-If this tool is adopted by regional presenting networks, CAPACOA will create an API endpoint to expose the data. This data will then be loaded to Artsdata.
+Once this tool is adopted by regional presenting networks, network users will have the ability to push their data to the `output/showcase-events.json` file. This data will then be Extracted-Transformed-Loaded to Artsdata, using Github’s user content domain and the “raw" path as follows:
+https://raw.githubusercontent.com/capacoa/showcase-events/refs/heads/main/output/showcase-events.json
+
+Once loaded to Artsdata, the data can be queried to correlate showcase opportunities with actual performance data.
 
 ### Version history
-v0.4 introduces an `@id` value with a URI looking like this: `https://capacoa.ca/data/showcase-events/contact-east-2026`. It also has the ability to send the data to this GitHub repository.
+v0.4 introduces an `@id` value with a URI looking like this: `https://capacoa.ca/data/showcase-events/event-name-2026`. It also has the ability to push the data to this GitHub repository.
