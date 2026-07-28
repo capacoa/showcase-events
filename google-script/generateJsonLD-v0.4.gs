@@ -264,7 +264,7 @@ function pushToGitHub() {
   const ui = SpreadsheetApp.getUi();
 
   if (GITHUB.token === "YOUR_PERSONAL_ACCESS_TOKEN_HERE") {
-    ui.alert("Please paste your GitHub Personal Access Token into the GITHUB.token constant in the script before pushing.");
+    ui.alert("Please paste your GitHub Personal Access Token into the GITHUB.token constant before pushing.");
     return;
   }
 
@@ -291,14 +291,25 @@ function pushToGitHub() {
     const getStatus   = getResponse.getResponseCode();
 
     if (getStatus === 200) {
-      const fileData  = JSON.parse(getResponse.getContentText());
-      fileSha         = fileData.sha;
-      const decoded   = Utilities.newBlob(Utilities.base64Decode(fileData.content)).getDataAsString();
-      currentArray    = JSON.parse(decoded);
-      if (!Array.isArray(currentArray)) currentArray = [];
+      const fileData = JSON.parse(getResponse.getContentText());
+      fileSha        = fileData.sha;
+      const decoded  = Utilities.newBlob(Utilities.base64Decode(fileData.content)).getDataAsString();
+
+      // Strip any <script> / </script> wrapper from earlier script versions
+      const cleaned  = decoded
+        .replace(/<script[^>]*>/i, "")
+        .replace(/<\/script>/i, "")
+        .trim();
+
+      // If the file is empty (size 0 or 1), start with an empty array
+      if (cleaned.length === 0) {
+        currentArray = [];
+      } else {
+        currentArray = JSON.parse(cleaned);
+        if (!Array.isArray(currentArray)) currentArray = [];
+      }
     } else if (getStatus === 404) {
-      // File doesn't exist yet — start with an empty array
-      currentArray = [];
+      currentArray = [];   // file does not exist yet — start fresh
     } else {
       ui.alert(`GitHub error fetching file (HTTP ${getStatus}): ${getResponse.getContentText()}`);
       return;
