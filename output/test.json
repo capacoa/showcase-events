@@ -1,0 +1,183 @@
+{
+   "@context": "http://schema.org/",
+   "@type": "ConferenceEvent",
+   "additionalType": "http://kg.artsdata.ca/resource/Convention",
+   "about": "http://www.wikidata.org/entity/Q184485",
+   "name": "Alberta Showcase 2026",
+   "startDate": "2026-10-23",
+   "location": {
+      "@type": "Place",
+      "sameAs": "http://kg.artsdata.ca/resource/K11-64",
+      "name": "Shell Theatre",
+      "address": {
+         "@type": "PostalAddress",
+         "addressLocality": "Fort Saskatchewan",
+         "addressRegion": "AB",
+         "postalCode": "T8L 0P7",
+         "streetAddress": "8700 87 St",
+         "addressCountry": "CA"
+      }
+   },
+   "endDate": "2026-10-25",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "url": "",
+   "performer": [
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Alfie Zappacosta",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-662"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Audrey Ochoa",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-1047"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Boreal",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-961"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Brigade",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-852"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Derina Harvey Band",
+         "sameAs": "http://kg.artsdata.ca/resource/K10-274"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "DoubleSuede",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-856"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Drew Gregory",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-7297"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Eric Leclerc",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-7300"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Quatuor ESCA",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-7299"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Green Thumb Theatre",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-856"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Horizon Ridge",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-5685"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Jaiden Riley",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-1134"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Jesse Peters",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-5655"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Kellie Haines",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-536"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Laila Biali",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-536"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Matthew Byrne",
+         "sameAs": "http://kg.artsdata.ca/resource/K12-94"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Melafrique",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-7298"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Ron Pearson",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-7302"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Ryan Lindsay",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-503"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Southside Denny",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-588"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Sydney Mae",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-7312"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "John Hewitt",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-5656"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "The Misery Mountain Boys",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-1205"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Dave Von Bieker",
+         "sameAs": "http://kg.artsdata.ca/resource/K4-645"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Ukrainian Shumka Dancers",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-7301"
+      },
+      {
+         "@type": "Thing",
+         "additionalType": "http://dbpedia.org/ontology/Agent",
+         "name": "Duo Chromatika",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-7313"
+      }
+   ]
+}
