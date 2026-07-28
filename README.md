@@ -23,3 +23,6 @@ How to use:
 ### Purpose
 
 If this tool is adopted by regional presenting networks, CAPACOA will create an API endpoint to expose the data. This data will then be loaded to Artsdata.
+
+### Version history
+v0.4 introduces an `@id` value with a URI looking like this: `https://capacoa.ca/data/showcase-events/contact-east-2026`. It also has the ability to send the data to this GitHub repository.
