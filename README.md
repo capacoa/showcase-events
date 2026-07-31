@@ -29,4 +29,15 @@ https://raw.githubusercontent.com/capacoa/showcase-events/refs/heads/main/output
 Once loaded to Artsdata, the data can be queried to correlate showcase opportunities with actual performance data.
 
 ### Version history
-v0.4 introduces an `@id` value with a URI looking like this: `https://capacoa.ca/data/showcase-events/event-name-2026`. It also has the ability to push the data to this GitHub repository.
+
+**v0.5**
+
+- Supports online events.
+- Adds organizer data.
+- Adds duplicate URI validation before generating JSON-LD.
+- Updates the JSON-LD generation to pick the data from the current tab, allowing the users to duplicate tab 1 if they desire.
+
+**v0.4** 
+
+- Introduced an `@id` value with a URI looking like this: `https://capacoa.ca/data/showcase-events/event-name-2026`.
+- Added the ability to push the data to this GitHub repository.
