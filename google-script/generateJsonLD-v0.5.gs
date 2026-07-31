@@ -38,9 +38,8 @@ const FIXED = {
   eventIdBase:             "https://capacoa.ca/data/showcase-events/",
 };
 
-// Attendance mode: maps the short URI stored in the form to its canonical form.
-// 
-// whitelist — anything not in this map falls back to OfflineEventAttendanceMode.
+// Attendance mode: maps the short-form value selected in the form to its full URI.
+// Anything not in this map falls back to OfflineEventAttendanceMode.
 const ATTENDANCE_MODES = {
   "OfflineEventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "OnlineEventAttendanceMode":  "https://schema.org/OnlineEventAttendanceMode",
@@ -136,13 +135,74 @@ function toSameAsUrl(value) {
     : `http://kg.artsdata.ca/resource/${value}`;
 }
 
+// ─── Duplicate URI validation ─────────────────────────────────────────────────
+
+/**
+ * Scans all Artsdata/sameAs URIs in the organizer and artist sections and
+ * alerts the user if any URI appears more than once.
+ * Returns true if validation passes, false if a duplicate was found.
+ */
+function validateNoDuplicateUris(formSheet) {
+  const ui = SpreadsheetApp.getUi();
+  const seen = {};   // uri → first cell address that used it
+
+  // Helper: register a URI and check for duplicates
+  function check(uri, cellAddress) {
+    if (!uri) return true;
+    const norm = uri.trim().toLowerCase();
+    if (seen[norm]) {
+      ui.alert(
+        `Duplicate Artsdata ID detected in cell ${cellAddress}.\n\n` +
+        `"${uri.trim()}" was already used in cell ${seen[norm]}.\n\n` +
+        `Make sure that no two organizers or artists share the same URI.`
+      );
+      return false;
+    }
+    seen[norm] = cellAddress;
+    return true;
+  }
+
+  // Check organizer rows
+  for (let row = CELLS.organizerFirstRow; row <= CELLS.organizerLastRow; row++) {
+    const val = String(formSheet.getRange(row, CELLS.organizerSameAsCol).getValue() || "").trim();
+    if (val && !check(val, rowColToA1(row, CELLS.organizerSameAsCol))) return false;
+  }
+
+  // Check artist rows (sentinel-based)
+  let row = CELLS.artistFirstRow;
+  while (true) {
+    const label = String(formSheet.getRange(row, 1).getValue() || "").trim();
+    if (label === CELLS.artistStopLabel) break;
+    if (row > 500) break;
+    const val = String(formSheet.getRange(row, CELLS.artistSameAsCol).getValue() || "").trim();
+    if (val && !check(val, rowColToA1(row, CELLS.artistSameAsCol))) return false;
+    row++;
+  }
+
+  return true;
+}
+
+/** Converts a row/column number pair to an A1-style cell address (e.g. 2,3 → "C2"). */
+function rowColToA1(row, col) {
+  let colName = "";
+  let c = col;
+  while (c > 0) {
+    colName = String.fromCharCode(((c - 1) % 26) + 65) + colName;
+    c = Math.floor((c - 1) / 26);
+  }
+  return colName + row;
+}
+
 // ─── Build JSON-LD object ─────────────────────────────────────────────────────
 
 function buildJsonLD() {
   const ss        = SpreadsheetApp.getActiveSpreadsheet();
-  const formSheet = ss.getSheetByName("Form");
+  const formSheet = ss.getActiveSheet();
 
-  if (!formSheet) throw new Error('Sheet "Form" not found.');
+  
+
+  // ── Validate no duplicate URIs before proceeding ──────────────────────────
+  if (!validateNoDuplicateUris(formSheet)) return null;
 
   // ── Event-level fields ─────────────────────────────────────────────────────
   const eventName = cellValue(formSheet, CELLS.eventName);
@@ -257,6 +317,7 @@ function generateJsonLD() {
   let output;
   try {
     const jsonLd = buildJsonLD();
+    if (!jsonLd) return;   // validation failed — user already alerted
     output = '<script type="application/ld+json">\n'
            + JSON.stringify(jsonLd, null, 3)
            + '\n<\/script>';
@@ -327,6 +388,7 @@ function pushToGitHub() {
   let jsonLd;
   try {
     jsonLd = buildJsonLD();
+    if (!jsonLd) return;   // validation failed — user already alerted
   } catch (e) {
     ui.alert("Error building JSON-LD: " + e.message);
     return;
