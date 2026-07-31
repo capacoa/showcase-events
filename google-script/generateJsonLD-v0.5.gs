@@ -8,7 +8,7 @@
  * 4. Save (Ctrl+S), then close the editor
  * 5. Back in your sheet, a new menu "JSON-LD Tools" will appear in the menu bar
  * 6. Click JSON-LD Tools > Generate JSON-LD to preview in the sidebar
- * 7. Click JSON-LD Tools > Push to GitHub to add/update the event in the
+ * 7. Click JSON-LD Tools > Push to Artsdata to add/update the event in the
  *    central JSON array at capacoa/showcase-events
  */
 
@@ -298,8 +298,8 @@ function buildJsonLD() {
     "about":              FIXED.about,
     "name":               eventName,
     "startDate":          startDate,
-    "location":           location,
     "endDate":            endDate,
+    "location":           location,
     "eventStatus":        FIXED.eventStatus,
     "eventAttendanceMode":attendanceMode,
     "url":                eventUrl,
@@ -377,7 +377,7 @@ function generateJsonLD() {
  * Fetches the current JSON array from GitHub, upserts the current event
  * (matched by @id), and commits the updated file back.
  */
-function pushToGitHub() {
+function pushToArtsdata() {
   const ui = SpreadsheetApp.getUi();
 
   if (GITHUB.token === "YOUR_PERSONAL_ACCESS_TOKEN_HERE") {
@@ -486,6 +486,6 @@ function onOpen() {
     .createMenu("JSON-LD Tools")
     .addItem("Generate JSON-LD", "generateJsonLD")
     .addSeparator()
-    .addItem("Push to GitHub", "pushToGitHub")
+    .addItem("Push to Artsdata", "pushToArtsdata")
     .addToUi();
 }
