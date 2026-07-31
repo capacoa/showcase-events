@@ -18,7 +18,7 @@ How to use:
 
   <img width="959" height="198" alt="image" src="https://github.com/user-attachments/assets/df0d0166-a49b-495c-ac71-a900a4e89311" />
   
-  4. A dialog box will appear on the right side of the screen. This is the JSON-LD code for your showcase event. You may copy and paste this code on your event's webpage to make your showcase event's information readable by search engines and AI models. , which you may copy and paste on your website.
+  4. A dialog box will appear on the right side of the screen. This is the JSON-LD code for your showcase event. You may copy and paste this code on your event's webpage to make your showcase event's information readable by search engines and AI models.
      - If you do not know how to paste your JSON-LD code to your website, please reach out to CAPACOA. We will be happy to assist you.
   5. To send your structured data to CAPACOA and to Artsdata, click again on "JSON-LD Tools" and then on "Push to Artsdata". Do this only when your data is complete and ready to be published.
   6. You may generate structured data for multiple event using the same sheet. To do so, right click on the "Form" tab, and select "Duplicate". You may, if wish, rename tabs in your sheet as you see fit. Then repeat steps 2 to 5 in this new tab.
