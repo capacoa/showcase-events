@@ -1,0 +1,38 @@
+{
+   "@id": "https://capacoa.ca/data/showcase-events/vns-artists-showcase-2026",
+   "@context": "http://schema.org/",
+   "@type": "ConferenceEvent",
+   "additionalType": "http://kg.artsdata.ca/resource/Convention",
+   "about": "http://www.wikidata.org/entity/Q184485",
+   "name": "VNS Artists Showcase",
+   "startDate": "2026-10-06",
+   "endDate": "2026-10-08",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+   "url": "https://www.ontariopresents.ca/virtual-networking-series",
+   "organizer": [
+      {
+         "@type": "Organization",
+         "name": "Ontario Presents",
+         "sameAs": "http://kg.artsdata.ca/resource/K14-59"
+      }
+   ],
+   "performer": [
+      {
+         "@type":  [
+           "Thing",
+           "http://dbpedia.org/ontology/Agent"
+         ],
+         "name": "Lisa Leblanc",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-5738"
+      },
+      {
+         "@type":  [
+           "Thing",
+           "http://dbpedia.org/ontology/Agent"
+         ],
+         "name": "Artist name",
+         "sameAs": "http://kg.artsdata.ca/resource/KID"
+      }
+   ]
+}
