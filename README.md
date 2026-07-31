@@ -11,22 +11,24 @@ https://drive.google.com/drive/folders/1T-dEAFyfqQM0xY6IspV9ILkPE8aDGIqL?usp=dri
 
 How to use:
 
-  1. Make a copy of the spreadsheet. You will be warned that the spreadsheet contains an "Attached Apps Script file", that is a Google script that will be copied along with the spreadsheet. You may safely copy the script.
-  2. Populate all white cells in the "Form" tab.
-  3. When you are done click on "JSON-LD Tools" and then on "Generate JSON-LD".
+  1. Make a copy of the spreadsheet or use a copy created for you by CAPACOA. You will be warned that the spreadsheet contains an "Attached Apps Script file", that is a Google script that will be copied along with the spreadsheet. You may safely copy the script.
+  2. Populate white cells in the "Form" tab.
+     - For instructions on how to retrieve Artsdata ID, see this [documentation page](https://docs.artsdata.ca/identifiers-guidelines/retrieve-uri.html).
+  3. When you are done click on "JSON-LD Tools" and then on "Generate JSON-LD". This may prompt another warning regarding the Google script. You may accept this script.
 
-  <img width="968" height="162" alt="image" src="https://github.com/user-attachments/assets/aa944872-01d8-44dc-b693-d6fb5a55f487" />
+  <img width="959" height="198" alt="image" src="https://github.com/user-attachments/assets/df0d0166-a49b-495c-ac71-a900a4e89311" />
   
-  4. This will prompt another warning regarding the Google script. You may accept this script.
-  5. A dialog box will appear on the right side of the screen. This is your JSON-LD code, which you may copy and paste on your website.
-  6. To send your structured data to CAPACOA and to Artsdata, click on "JSON-LD Tools" and then on "Push to GitHub". Do this only when your data is complete and ready to be published.
+  4. A dialog box will appear on the right side of the screen. This is the JSON-LD code for your showcase event. You may copy and paste this code on your event's webpage to make your showcase event's information readable by search engines and AI models. , which you may copy and paste on your website.
+     - If you do not know how to paste your JSON-LD code to your website, please reach out to CAPACOA. We will be happy to assist you.
+  5. To send your structured data to CAPACOA and to Artsdata, click again on "JSON-LD Tools" and then on "Push to Artsdata". Do this only when your data is complete and ready to be published.
+  6. You may generate structured data for multiple event using the same sheet. To do so, right click on the "Form" tab, and select "Duplicate". You may, if wish, rename tabs in your sheet as you see fit. Then repeat steps 2 to 5 in this new tab.
 
 ### Purpose
 
 Once this tool is adopted by regional presenting networks, network users will have the ability to push their data to the `output/showcase-events.json` file. This data will then be Extracted-Transformed-Loaded to Artsdata, using Github’s user content domain and the “raw" path as follows:
 https://raw.githubusercontent.com/capacoa/showcase-events/refs/heads/main/output/showcase-events.json
 
-Once loaded to Artsdata, the data can be queried to correlate showcase opportunities with actual performance data.
+Once loaded to Artsdata, the data can be queried to correlate showcase opportunities with actual performance data. It can also easily be found by search engines and AI agents.
 
 ### Version history
 
