@@ -30,7 +30,11 @@ const FIXED = {
   context:                 "http://schema.org/",
   type:                    "ConferenceEvent",
   additionalType:          "http://kg.artsdata.ca/resource/Convention",
-  about:                   "http://www.wikidata.org/entity/Q184485",
+  about: {
+    "@type":  "Thing",
+    "name":   "Performing arts",
+    "sameAs": "http://www.wikidata.org/entity/Q184485",
+  },
   eventStatus:             "https://schema.org/EventScheduled",
   addressCountry:          "CA",
   performerType:           "Thing",
