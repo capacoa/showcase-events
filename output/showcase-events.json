@@ -193,5 +193,236 @@
             "sameAs": "http://kg.artsdata.ca/resource/K2-7313"
          }
       ]
+   },
+   {
+      "@id": "https://capacoa.ca/data/showcase-events/contact-east-2026",
+      "@context": "http://schema.org/",
+      "@type": "ConferenceEvent",
+      "additionalType": "http://kg.artsdata.ca/resource/Convention",
+      "about": {
+         "@type": "Thing",
+         "name": "Performing arts",
+         "sameAs": "http://www.wikidata.org/entity/Q184485"
+      },
+      "name": "Contact East 2026",
+      "startDate": "2026-04-08",
+      "endDate": "2026-04-11",
+      "location": {
+         "@type": "Place",
+         "sameAs": "http://kg.artsdata.ca/resource/K14-130",
+         "name": "Imperial Theatre",
+         "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Saint John",
+            "addressRegion": "NB",
+            "postalCode": "E2L 5B8",
+            "streetAddress": "12 King Square S",
+            "addressCountry": "CA"
+         }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://atlanticpresenters.ca/contact-east/",
+      "organizer": [
+         {
+            "@type": "Organization",
+            "name": "Atlantic Presenters Association",
+            "sameAs": "http://kg.artsdata.ca/resource/K14-35"
+         }
+      ],
+      "performer": [
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Abigail Lapell",
+            "sameAs": "http://kg.artsdata.ca/resource/K12-153"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Aquakultre",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-672"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Association for Opera in Canada",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7278"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Axis Theatre Company",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-5385"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "BABES, BABES, BABES! Burlesque & Drag Show",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-678"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Burnstick",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-5090"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Cause & Effect Circus",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-733"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Chimera Dance Theatre Project",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-5150"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Corpuscule Danse",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-741"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Daniel James McFadyen",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-355"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Durham County Poets",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7277"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "HEIST",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-916"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Jing Xia",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-6017"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "John Muirhead",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7282"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "La Sporée/Sarah Bronsard",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-4243"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Little Misty",
+            "sameAs": "http://kg.artsdata.ca/resource/K5-45"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Logan Richard",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-494"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Mat Hughes",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-565"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Mocean Dance",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-178"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Natasha Blackwood",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-515"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Oktopus",
+            "sameAs": "http://kg.artsdata.ca/resource/K10-392"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Pony Girl",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7276"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Quartetto Gelato",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-6002"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Roseneath Theatre",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-6618"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Rube & Rake",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7280"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Sophie Lukacs",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1004"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Tanya Davis",
+            "sameAs": "http://kg.artsdata.ca/resource/K5-1322"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "The Dusty Halos",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7279"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Tina Leon",
+            "sameAs": "http://kg.artsdata.ca/resource/K5-1475"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Tocani",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7281"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Tyler Hache",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-637"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Zuppa",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7286"
+         }
+      ]
    }
 ]
