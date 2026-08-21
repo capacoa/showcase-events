@@ -35,6 +35,26 @@ https://raw.githubusercontent.com/capacoa/showcase-events/refs/heads/main/output
 
 Once loaded to Artsdata, the data can be queried to correlate showcase opportunities with actual performance data. It can also easily be found by search engines and AI agents.
 
+## Useful links
+
+- [Event data in Artsdata](https://kg.artsdata.ca/en/query/show?title=Event%20entities%20in%20showcase-events&sparql=list_events&graph=http://kg.artsdata.ca/capacoa/artsdata-planet-capacoa/showcase-events)
+- [Source log in Artsdata](https://github.com/artsdata-stewards/source-logs/issues/48)
+- [GitHub Workflow](https://github.com/culturecreates/artsdata-planet-capacoa/blob/main/.github/workflows/showcase-events.yml) to load (and manually refresh) the data in Artsdata (note: the data is automatically uploaded every 15th day of the month)
+
+## About the Google Apps Script
+
+This app was designed with the assistance of Claude AI.
+
+To load the data to this GitHub repository, the a fine-grained token must be added to the Google Script code. Should this token expire or be lost, here is the process for generating a new one.
+
+1. Go to github.com → click your profile picture (top right) → Settings
+2. Scroll to the very bottom of the left sidebar → Developer settings
+3. Personal access tokens → Fine-grained tokens → Generate new token
+4. Give it a name (e.g. showcase-events-sheet)
+5. Under Repository access, select Only select repositories → choose capacoa/showcase-events
+6. Under Permissions → Repository permissions → set Contents to Read and write
+7. Click Generate token — copy it immediately, GitHub only shows it once
+
 ### Version history
 
 **v0.5**
@@ -48,9 +68,3 @@ Once loaded to Artsdata, the data can be queried to correlate showcase opportuni
 
 - Introduced an `@id` value with a URI looking like this: `https://capacoa.ca/data/showcase-events/event-name-2026`.
 - Added the ability to push the data to this GitHub repository.
-
-## Useful links
-
-- [Event data in Artsdata](https://kg.artsdata.ca/en/query/show?title=Event%20entities%20in%20showcase-events&sparql=list_events&graph=http://kg.artsdata.ca/capacoa/artsdata-planet-capacoa/showcase-events)
-- [Source log in Artsdata](https://github.com/artsdata-stewards/source-logs/issues/48)
-- [GitHub Workflow](https://github.com/culturecreates/artsdata-planet-capacoa/blob/main/.github/workflows/showcase-events.yml) to load (and manually refresh) the data in Artsdata
