@@ -53,3 +53,4 @@ Once loaded to Artsdata, the data can be queried to correlate showcase opportuni
 
 - [Event data in Artsdata](https://kg.artsdata.ca/en/query/show?title=Event%20entities%20in%20showcase-events&sparql=list_events&graph=http://kg.artsdata.ca/capacoa/artsdata-planet-capacoa/showcase-events)
 - [Source log in Artsdata](https://github.com/artsdata-stewards/source-logs/issues/48)
+- [GitHub Workflow](https://github.com/culturecreates/artsdata-planet-capacoa/blob/main/.github/workflows/showcase-events.yml) to load (and manually refresh) the data in Artsdata
