@@ -48,3 +48,8 @@ Once loaded to Artsdata, the data can be queried to correlate showcase opportuni
 
 - Introduced an `@id` value with a URI looking like this: `https://capacoa.ca/data/showcase-events/event-name-2026`.
 - Added the ability to push the data to this GitHub repository.
+
+## Useful links
+
+- [Event data in Artsdata](https://kg.artsdata.ca/en/query/show?title=Event%20entities%20in%20showcase-events&sparql=list_events&graph=http://kg.artsdata.ca/capacoa/artsdata-planet-capacoa/showcase-events)
+- [Source log in Artsdata](https://github.com/artsdata-stewards/source-logs/issues/48)
