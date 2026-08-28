@@ -424,5 +424,308 @@
             "sameAs": "http://kg.artsdata.ca/resource/K2-7286"
          }
       ]
+   },
+   {
+      "@id": "https://capacoa.ca/data/showcase-events/pacific-contact-2026",
+      "@context": "http://schema.org/",
+      "@type": "ConferenceEvent",
+      "additionalType": "http://kg.artsdata.ca/resource/Convention",
+      "about": {
+         "@type": "Thing",
+         "name": "Performing arts",
+         "sameAs": "http://www.wikidata.org/entity/Q184485"
+      },
+      "name": "Pacific Contact 2026",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-04",
+      "location": {
+         "@type": "Place",
+         "sameAs": "http://kg.artsdata.ca/resource/K2-5487",
+         "name": "Port Theatre",
+         "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nanaimo",
+            "addressRegion": "BC",
+            "postalCode": "V9R 6Z4",
+            "streetAddress": "125 Front Street",
+            "addressCountry": "CA"
+         }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://bclive.ca/pacific-contact-2026/",
+      "organizer": [
+         {
+            "@type": "Organization",
+            "name": "BC Live Performance Network",
+            "sameAs": "http://kg.artsdata.ca/resource/K14-200"
+         }
+      ],
+      "performer": [
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "AV & the Inner City",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-677"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Ballet Kelowna",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-5377"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Théâtre Motus",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-6216"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Kif Kif Sisters",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-5999"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Wild Mint Arts",
+            "sameAs": "http://kg.artsdata.ca/resource/K3-190"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Little Onion Puppet Co.",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1327"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "La Nef",
+            "sameAs": "http://kg.artsdata.ca/resource/K10-350"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Originz",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1328"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Inverso Productions",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-5187"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Joylyn",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-465"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Tymisha Harris",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-649"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Myc Sharratt & The Alibis",
+            "sameAs": "http://kg.artsdata.ca/resource/K3-155"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Meredith Moon",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7356"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Rum Ragged",
+            "sameAs": "http://kg.artsdata.ca/resource/K43-11368"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "La Famille Leblanc",
+            "sameAs": "http://kg.artsdata.ca/resource/K23-10287"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Garret T. Willie",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-725"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "The North Sound",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-6107"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Chloé Dumoulin",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1060"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Trio Hochelaga",
+            "sameAs": "http://kg.artsdata.ca/resource/K43-6235"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "CC Duo",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1329"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Quatuor ESCA",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7299"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Laila Biali",
+            "sameAs": "http://kg.artsdata.ca/resource/K43-11263"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Tio Chorinho and Flávia Nascimento",
+            "sameAs": "http://kg.artsdata.ca/resource/K43-9298"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Transcendent Talas",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-7364"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Kobo Town",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-912"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Tricoter, Foolish Operations",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-721"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "The Fox Queen",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1264"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Oopsie and Queenage Wasteland - Candy Roberts",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-522"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "She Shoots, She Scores - Green Thumb",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-5408"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Kellie Haines, Ventriloquist",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-536"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Jhoely Triana",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-848"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Le Patin Libre",
+            "sameAs": "http://kg.artsdata.ca/resource/K10-86"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Ballet Vancouver",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-764"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Pulsive Party",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1331"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Small Town Artillery",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1003"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "JaimesonRhy",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-902"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Olivia Khoury",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-4469"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Gay4Nature Collective",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-874"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "re:Naissance - Inferno & Orpheus in Underworld",
+            "sameAs": "http://kg.artsdata.ca/resource/K2-5146"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Ebony Roots",
+            "sameAs": "http://kg.artsdata.ca/resource/K43-5798"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Raga Echoes",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-958"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Empanadas Ilegales",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-822"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "The Harpoonist",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1330"
+         },
+         {
+            "@type": "Thing",
+            "additionalType": "http://dbpedia.org/ontology/Agent",
+            "name": "Sophie Lukacs",
+            "sameAs": "http://kg.artsdata.ca/resource/K4-1004"
+         }
+      ]
    }
 ]
