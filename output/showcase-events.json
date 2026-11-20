@@ -727,5 +727,42 @@
             "sameAs": "http://kg.artsdata.ca/resource/K4-1004"
          }
       ]
+   },
+   {
+      "@id": "https://capacoa.ca/data/showcase-events/capacoa-conference-2027",
+      "@context": "http://schema.org/",
+      "@type": "ConferenceEvent",
+      "additionalType": "http://kg.artsdata.ca/resource/Convention",
+      "about": {
+         "@type": "Thing",
+         "name": "Performing arts",
+         "sameAs": "http://www.wikidata.org/entity/Q184485"
+      },
+      "name": "CAPACOA Conference 2027",
+      "startDate": "2027-11-15",
+      "endDate": "2027-11-19",
+      "location": {
+         "@type": "Place",
+         "sameAs": "http://kg.artsdata.ca/resource/K11-2",
+         "name": "National Arts Centre",
+         "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ottawa",
+            "addressRegion": "ON",
+            "postalCode": "K1P 5W1",
+            "streetAddress": "1 Elgin Street",
+            "addressCountry": "CA"
+         }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "url": "https://conference.capacoa.ca/",
+      "organizer": [
+         {
+            "@type": "Organization",
+            "name": "CAPACOA",
+            "sameAs": "http://kg.artsdata.ca/resource/K16-211"
+         }
+      ]
    }
 ]
