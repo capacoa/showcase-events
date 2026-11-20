@@ -55,6 +55,13 @@ To load the data to this GitHub repository, the a fine-grained token must be add
 6. Under Permissions → Repository permissions → set Contents to Read and write
 7. Click Generate token — copy it immediately, GitHub only shows it once
 
+To update the token in the script:
+
+1. Open a Google Sheet → Extenstions → App scripts
+2. Update the token on line 20
+3. Click ctrl+S to save the script
+4. Reload the Google Sheet to get the updated script
+
 ### Version history
 
 **v0.5**
